@@ -20,6 +20,11 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	implementation 'javax.servlet:jstl'
+	implementation 'org.apache.tiles:tiles-jsp'
+	implementation 'org.apache.tiles:tiles-servlet'
+	implementation 'org.apache.tiles:tiles-core'
+	implementation 'org.apache.tiles:tiles-api'
+	implementation 'org.apache.tiles:tiles-el'
 }
 
 test {
