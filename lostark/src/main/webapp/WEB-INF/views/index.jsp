@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Lostark</title>
 </head>
 <body>
-
+	index.jsp
 </body>
 </html>
