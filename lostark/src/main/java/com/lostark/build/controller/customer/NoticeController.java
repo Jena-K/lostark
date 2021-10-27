@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("customer/notice/")
-public class NoticeController { 	// °Ô½ÃÆÇ °ü·Ã ÄÁÆ®·Ñ·¯
+public class NoticeController { 	// ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½Ñ·ï¿½
 	/*
-	 *°Ô½Ã±Û ¸ñ·Ï, µî·Ï, ¼öÁ¤, »èÁ¦ 
+	 *ï¿½Ô½Ã±ï¿½ ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ 
 	 * list,reg,edit,del
 	 * 
 	 */
@@ -15,24 +15,24 @@ public class NoticeController { 	// °Ô½ÃÆÇ °ü·Ã ÄÁÆ®·Ñ·¯
 	@RequestMapping("list")
 	public String list() {
 		
-		return "customer/notice/list";
+		return "customer.notice.list";
 	}
 	
 	@RequestMapping("reg")
 	public String reg() {
 		
-		return "customer/notice/reg";
+		return "customer.notice.reg";
 	}
 	
 	@RequestMapping("edit")
 	public String edit() {
 		
-		return "customer/notice/edit";
+		return "customer.notice.edit";
 	}
 	
 	@RequestMapping("del")
 	public String del() {
 		
-		return "customer/notice/del";
+		return "customer.notice.del";
 	}
 }
