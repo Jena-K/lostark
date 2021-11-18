@@ -7,11 +7,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import com.board.interceptor.LoggerInterceptor;
 
 @Configuration
-public class MvcConfiguration implements WebMvcConfigurer{
+public class MvcConfiguration implements WebMvcConfigurer {
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(new LoggerInterceptor())
-			.excludePathPatterns("/css/**", "/fonts/**", "/plugin/**", "/scripts/**");
+		.excludePathPatterns("/css/**", "/fonts/**", "/plugin/**", "/scripts/**");
 	}
 }
