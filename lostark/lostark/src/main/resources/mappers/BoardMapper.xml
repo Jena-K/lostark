@@ -68,28 +68,29 @@
 		idx = #{idx}
 	</update>
 	
-	<select id="selectBoardList" parameterType="Criteria" resultType="BoardDTO">
+	<select id="selectBoardList" parameterType="BoardDTO" resultType="BoardDTO">
 		SELECT
 			<include refid="boardColumns"/>
 		FROM
 			tb_board
 		WHERE
 			delete_yn = 'N'
+		<include refid="CommonMapper.search" />
 		ORDER BY
 			notice_yn ASC,
 			idx DESC,
 			insert_time DESC
-		LIMIT
-			#{startPage}, #{recordsPerPage}
+		<include refid="CommonMapper.paging" />
 	</select>
 	
-	<select id="selectBoardTotalCount" parameterType="Criteria" resultType="int">
+	<select id="selectBoardTotalCount" parameterType="BoardDTO" resultType="int">
 		SELECT
 			COUNT(*)
 		FROM
 			tb_board
 		WHERE
 			delete_yn='N'
+		<include refid="CommonMapper.search" />
 	</select>
 
 </mapper>

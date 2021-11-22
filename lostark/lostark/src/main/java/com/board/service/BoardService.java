@@ -3,7 +3,6 @@ package com.board.service;
 import java.util.List;
 
 import com.board.domain.BoardDTO;
-import com.board.paging.Criteria;
 
 public interface BoardService {
 	public boolean registerBoard(BoardDTO params);
@@ -12,6 +11,6 @@ public interface BoardService {
 	
 	public boolean deleteBoard(Long idx);
 	
-	public List<BoardDTO> getBoardList(Criteria criteria);
+	public List<BoardDTO> getBoardList(BoardDTO params);
 		
 }
