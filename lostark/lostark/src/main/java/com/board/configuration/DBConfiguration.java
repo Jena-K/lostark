@@ -58,6 +58,8 @@ public class DBConfiguration {
 		return new org.apache.ibatis.session.Configuration();
 	}
 	
+
+	
 	@Bean
 	public TransactionManager transactionManager() {
 		return new DataSourceTransactionManager(dataSource());
